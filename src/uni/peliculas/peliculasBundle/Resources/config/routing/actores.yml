@@ -1,0 +1,30 @@
+actores:
+    path:     /
+    defaults: { _controller: "uniPeliculasBundle:actores:index" }
+
+actores_show:
+    path:     /{id}/show
+    defaults: { _controller: "uniPeliculasBundle:actores:show" }
+
+actores_new:
+    path:     /new
+    defaults: { _controller: "uniPeliculasBundle:actores:new" }
+
+actores_create:
+    path:     /create
+    defaults: { _controller: "uniPeliculasBundle:actores:create" }
+    requirements: { _method: post }
+
+actores_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "uniPeliculasBundle:actores:edit" }
+
+actores_update:
+    path:     /{id}/update
+    defaults: { _controller: "uniPeliculasBundle:actores:update" }
+    requirements: { _method: post|put }
+
+actores_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "uniPeliculasBundle:actores:delete" }
+    requirements: { _method: post|delete }

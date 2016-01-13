@@ -1,0 +1,39 @@
+{% extends '::base.html.twig' %}
+
+
+{% block cuerpo %}
+    
+    <div id="menuSuperior">
+      {% block menuSuperior %}
+          <a href="{{ path('peliculas_buscar_titulo') }}">
+            Buscar Titulo
+         </a>
+            <br>
+         <a href="{{ path('peliculas_buscar_autor') }}">
+            Buscar Autor
+         </a>
+         
+      {% endblock %}
+    </div>
+
+    <div id="menuLateral">
+      {% block menuLateral %}
+    
+      {% endblock %}
+    </div>
+    
+    <div id="central">
+      {% block central %}
+        
+      {% endblock %}
+    </div>
+
+
+
+
+
+
+
+
+{% endblock %}
+

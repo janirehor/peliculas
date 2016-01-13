@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}PELICULAS{% endblock %}</title>
+        {% block stylesheets %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+         
+       
+         {% endblock %}
+    </head>
+    <body>
+        
+        <div id="cabecera">
+            {% block cabecera %}
+                <br>
+            {% endblock %}
+        </div>
+       
+         <div id="cuerpo">
+            {% block cuerpo %}Cuerpo{% endblock %}
+        </div>
+        
+         <div id="pie">
+            {% block pie %} <h4>Made by Janire</h4>  
+            {% endblock %}
+        </div>
+    </body>
+</html>

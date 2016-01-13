@@ -1,0 +1,48 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>categorias</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Cienciaficcion</th>
+                <td>{{ entity.cienciaFiccion }}</td>
+            </tr>
+            <tr>
+                <th>Accion</th>
+                <td>{{ entity.accion }}</td>
+            </tr>
+            <tr>
+                <th>Animacion</th>
+                <td>{{ entity.animacion }}</td>
+            </tr>
+            <tr>
+                <th>Comedia</th>
+                <td>{{ entity.comedia }}</td>
+            </tr>
+            <tr>
+                <th>Terror</th>
+                <td>{{ entity.terror }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('categorias') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('categorias_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

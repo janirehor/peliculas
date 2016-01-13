@@ -1,0 +1,19 @@
+uni_peliculas_actores:
+    resource: "@uniPeliculasBundle/Resources/config/routing/actores.yml"
+    prefix:   /actores
+
+uni_peliculas_comentarios:
+    resource: "@uniPeliculasBundle/Resources/config/routing/comentarios.yml"
+    prefix:   /comentarios
+
+uni_peliculas_categorias:
+    resource: "@uniPeliculasBundle/Resources/config/routing/categorias.yml"
+    prefix:   /categorias
+
+uni_peliculas_peliculas:
+    resource: "@uniPeliculasBundle/Resources/config/routing/peliculas.yml"
+    prefix:   /peliculas
+
+uni_peliculas_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: uniPeliculasBundle:Default:index }
